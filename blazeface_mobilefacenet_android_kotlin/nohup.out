@@ -1,0 +1,111 @@
+2022-06-26 20:57:37,768 [   3667]   WARN - Container.ComponentManagerImpl - Do not use constructor injection (requestorClass=com.android.tools.idea.AndroidInitialConfigurator) 
+2022-06-26 20:57:41,652 [   7551]   WARN - tartup.impl.StartupManagerImpl - Activities registered via registerPostStartupActivity must be dumb-aware: com.android.tools.idea.stats.AndroidStudioUsageTracker$ProjectLifecycleTracker$projectComponentsInitialized$1@55e59352 
+2022-06-26 20:57:48,622 [  14521]   WARN -        #com.intellij.idea.Main - can't parse gsettings line: @a(ss) [] 
+2022-06-26 20:57:52,724 [  18623]   WARN - Container.ComponentManagerImpl - Do not use constructor injection (requestorClass=com.android.tools.idea.apk.ApkWritingAccessProvider) 
+2022-06-26 21:15:00,701 [1046600]   WARN -            #com.android.ddmlib - Failed to start monitoring 192.168.43.26:42885 
+2022-06-26 21:19:11,875 [1297774]   WARN - itors.literals.LiteralsManager - Only Kotlin is supported for LiveLiterals 
+2022-06-26 21:19:11,876 [1297775]   WARN - itors.literals.LiteralsManager - Only Kotlin is supported for LiveLiterals 
+2022-06-26 21:19:11,876 [1297775]   WARN - itors.literals.LiteralsManager - Only Kotlin is supported for LiveLiterals 
+2022-06-26 21:19:11,876 [1297775]   WARN - itors.literals.LiteralsManager - Only Kotlin is supported for LiveLiterals 
+2022-06-26 21:19:11,877 [1297776]   WARN - itors.literals.LiteralsManager - Only Kotlin is supported for LiveLiterals 
+2022-06-26 21:19:11,878 [1297777]   WARN - itors.literals.LiteralsManager - Only Kotlin is supported for LiveLiterals 
+2022-06-26 21:19:11,879 [1297778]   WARN - itors.literals.LiteralsManager - Only Kotlin is supported for LiveLiterals 
+2022-06-26 21:19:11,879 [1297778]   WARN - itors.literals.LiteralsManager - Only Kotlin is supported for LiveLiterals 
+2022-06-26 21:20:18,164 [1364063]   WARN - actions.CopyTBXReferenceAction - Cannot find TBX tool for IDE: AndroidStudio 
+2022-06-26 21:20:18,851 [1364750]   WARN - actions.CopyTBXReferenceAction - Cannot find TBX tool for IDE: AndroidStudio 
+2022-06-26 21:22:49,079 [1514978]   WARN - itors.literals.LiteralsManager - Only Kotlin is supported for LiveLiterals 
+2022-06-26 21:22:49,079 [1514978]   WARN - itors.literals.LiteralsManager - Only Kotlin is supported for LiveLiterals 
+2022-06-26 21:22:49,079 [1514978]   WARN - itors.literals.LiteralsManager - Only Kotlin is supported for LiveLiterals 
+2022-06-26 21:22:49,080 [1514979]   WARN - itors.literals.LiteralsManager - Only Kotlin is supported for LiveLiterals 
+2022-06-26 21:22:49,085 [1514984]   WARN - itors.literals.LiteralsManager - Only Kotlin is supported for LiveLiterals 
+2022-06-26 21:22:49,086 [1514985]   WARN - itors.literals.LiteralsManager - Only Kotlin is supported for LiveLiterals 
+2022-06-26 21:22:49,086 [1514985]   WARN - itors.literals.LiteralsManager - Only Kotlin is supported for LiveLiterals 
+2022-06-26 21:22:49,093 [1514992]   WARN - itors.literals.LiteralsManager - Only Kotlin is supported for LiveLiterals 
+2022-06-26 21:22:57,842 [1523741]   WARN - ution.process.OSProcessHandler - Process has been already terminated: man -S 2:3 AndroidBitmap_getInfo 
+2022-06-26 21:24:14,989 [1600888]   WARN - itors.literals.LiteralsManager - Only Kotlin is supported for LiveLiterals 
+2022-06-26 21:24:14,990 [1600889]   WARN - itors.literals.LiteralsManager - Only Kotlin is supported for LiveLiterals 
+2022-06-26 21:24:14,990 [1600889]   WARN - itors.literals.LiteralsManager - Only Kotlin is supported for LiveLiterals 
+2022-06-26 21:24:14,990 [1600889]   WARN - itors.literals.LiteralsManager - Only Kotlin is supported for LiveLiterals 
+2022-06-26 21:24:14,990 [1600889]   WARN - itors.literals.LiteralsManager - Only Kotlin is supported for LiveLiterals 
+2022-06-26 21:24:14,991 [1600890]   WARN - itors.literals.LiteralsManager - Only Kotlin is supported for LiveLiterals 
+2022-06-26 21:24:14,992 [1600891]   WARN - itors.literals.LiteralsManager - Only Kotlin is supported for LiveLiterals 
+2022-06-26 21:24:14,992 [1600891]   WARN - itors.literals.LiteralsManager - Only Kotlin is supported for LiveLiterals 
+2022-06-26 21:24:25,834 [1611733]   WARN - ea.logcat.AndroidLogcatService -  
+java.lang.NullPointerException
+	at com.android.tools.idea.logcat.AndroidLogFilterModel.isApplicableByConfiguredFilter(AndroidLogFilterModel.java:167)
+	at com.android.tools.idea.logcat.AndroidLogFilterModel.processLine(AndroidLogFilterModel.java:247)
+	at com.intellij.diagnostic.logging.LogConsoleBase.addMessage(LogConsoleBase.java:327)
+	at com.android.tools.idea.logcat.AndroidLogConsole.addLogLine(AndroidLogConsole.java:139)
+	at com.android.tools.idea.logcat.ViewListener.receiveFormattedLogLine(ViewListener.java:54)
+	at com.android.tools.idea.logcat.FormattedLogcatReceiver.onLogLineReceived(FormattedLogcatReceiver.java:42)
+	at com.android.tools.idea.logcat.AndroidLogcatService$ListenerConnector.dispatchMessage(AndroidLogcatService.java:153)
+	at com.android.tools.idea.logcat.AndroidLogcatService$ListenerConnector.processBacklog(AndroidLogcatService.java:146)
+	at com.android.tools.idea.logcat.AndroidLogcatService$ListenerConnector.onLogLineReceived(AndroidLogcatService.java:112)
+	at com.android.tools.idea.logcat.AndroidLogcatService$1.lambda$onLogLineReceived$0(AndroidLogcatService.java:248)
+	at com.google.common.collect.ImmutableList.forEach(ImmutableList.java:405)
+	at com.android.tools.idea.logcat.AndroidLogcatService$1.onLogLineReceived(AndroidLogcatService.java:248)
+	at com.android.tools.idea.logcat.AndroidLogcatReceiver.notifyLine(AndroidLogcatReceiver.java:132)
+	at com.android.tools.idea.logcat.AndroidLogcatReceiver.processNewLine(AndroidLogcatReceiver.java:125)
+	at org.jetbrains.android.util.AndroidOutputReceiver.processNewLines(AndroidOutputReceiver.java:38)
+	at com.android.ddmlib.MultiLineReceiver.addOutput(MultiLineReceiver.java:104)
+	at com.android.ddmlib.AdbHelper.executeRemoteCommand(AdbHelper.java:706)
+	at com.android.ddmlib.AdbHelper.executeRemoteCommand(AdbHelper.java:470)
+	at com.android.ddmlib.internal.DeviceImpl.executeShellCommand(DeviceImpl.java:708)
+	at com.android.tools.idea.logcat.AndroidLogcatService.execute(AndroidLogcatService.java:490)
+	at com.android.tools.idea.logcat.AndroidLogcatService.executeLogcat(AndroidLogcatService.java:255)
+	at com.android.tools.idea.logcat.AndroidLogcatService.lambda$startReceiving$0(AndroidLogcatService.java:229)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-06-26 21:25:50,102 [1696001]   WARN - itors.literals.LiteralsManager - Only Kotlin is supported for LiveLiterals 
+2022-06-26 21:25:50,102 [1696001]   WARN - itors.literals.LiteralsManager - Only Kotlin is supported for LiveLiterals 
+2022-06-26 21:25:50,102 [1696001]   WARN - itors.literals.LiteralsManager - Only Kotlin is supported for LiveLiterals 
+2022-06-26 21:25:50,102 [1696001]   WARN - itors.literals.LiteralsManager - Only Kotlin is supported for LiveLiterals 
+2022-06-26 21:25:50,102 [1696001]   WARN - itors.literals.LiteralsManager - Only Kotlin is supported for LiveLiterals 
+2022-06-26 21:25:50,102 [1696001]   WARN - itors.literals.LiteralsManager - Only Kotlin is supported for LiveLiterals 
+2022-06-26 21:25:50,103 [1696002]   WARN - itors.literals.LiteralsManager - Only Kotlin is supported for LiveLiterals 
+2022-06-26 21:25:50,532 [1696431]   WARN -            #com.android.ddmlib - Unexpected cmdline file for PID 17686 
+2022-06-26 21:26:52,206 [1758105]   WARN - itors.literals.LiteralsManager - Only Kotlin is supported for LiveLiterals 
+2022-06-26 21:26:52,206 [1758105]   WARN - itors.literals.LiteralsManager - Only Kotlin is supported for LiveLiterals 
+2022-06-26 21:26:52,207 [1758106]   WARN - itors.literals.LiteralsManager - Only Kotlin is supported for LiveLiterals 
+2022-06-26 21:26:52,208 [1758107]   WARN - itors.literals.LiteralsManager - Only Kotlin is supported for LiveLiterals 
+2022-06-26 21:26:52,209 [1758108]   WARN - itors.literals.LiteralsManager - Only Kotlin is supported for LiveLiterals 
+2022-06-26 21:26:52,209 [1758108]   WARN - itors.literals.LiteralsManager - Only Kotlin is supported for LiveLiterals 
+2022-06-26 21:26:52,210 [1758109]   WARN - itors.literals.LiteralsManager - Only Kotlin is supported for LiveLiterals 
+2022-06-26 21:31:21,002 [2026901]   WARN - actions.CopyTBXReferenceAction - Cannot find TBX tool for IDE: AndroidStudio 
+2022-06-26 21:31:21,049 [2026948]   WARN - actions.CopyTBXReferenceAction - Cannot find TBX tool for IDE: AndroidStudio 
+2022-06-26 21:31:34,175 [2040074]   WARN - ndroidLiveLiteralDeployMonitor - Live Literal Value of type Ljava/lang/String; not updated to ter.jpg since it outdated 
+2022-06-26 21:32:14,180 [2080079]   WARN - itors.literals.LiteralsManager - Only Kotlin is supported for LiveLiterals 
+2022-06-26 21:32:14,181 [2080080]   WARN - itors.literals.LiteralsManager - Only Kotlin is supported for LiveLiterals 
+2022-06-26 21:32:14,180 [2080079]   WARN - itors.literals.LiteralsManager - Only Kotlin is supported for LiveLiterals 
+2022-06-26 21:32:14,181 [2080080]   WARN - itors.literals.LiteralsManager - Only Kotlin is supported for LiveLiterals 
+2022-06-26 21:32:14,181 [2080080]   WARN - itors.literals.LiteralsManager - Only Kotlin is supported for LiveLiterals 
+2022-06-26 21:32:14,181 [2080080]   WARN - itors.literals.LiteralsManager - Only Kotlin is supported for LiveLiterals 
+2022-06-26 21:32:14,181 [2080080]   WARN - itors.literals.LiteralsManager - Only Kotlin is supported for LiveLiterals 
+2022-06-26 21:33:07,785 [2133684]   WARN - itors.literals.LiteralsManager - Only Kotlin is supported for LiveLiterals 
+2022-06-26 21:33:07,785 [2133684]   WARN - itors.literals.LiteralsManager - Only Kotlin is supported for LiveLiterals 
+2022-06-26 21:33:07,785 [2133684]   WARN - itors.literals.LiteralsManager - Only Kotlin is supported for LiveLiterals 
+2022-06-26 21:33:07,786 [2133685]   WARN - itors.literals.LiteralsManager - Only Kotlin is supported for LiveLiterals 
+2022-06-26 21:33:07,788 [2133687]   WARN - itors.literals.LiteralsManager - Only Kotlin is supported for LiveLiterals 
+2022-06-26 21:33:39,949 [2165848]   WARN - itors.literals.LiteralsManager - Only Kotlin is supported for LiveLiterals 
+2022-06-26 21:33:39,950 [2165849]   WARN - itors.literals.LiteralsManager - Only Kotlin is supported for LiveLiterals 
+2022-06-26 21:33:39,951 [2165850]   WARN - itors.literals.LiteralsManager - Only Kotlin is supported for LiveLiterals 
+2022-06-26 21:33:39,950 [2165849]   WARN - itors.literals.LiteralsManager - Only Kotlin is supported for LiveLiterals 
+2022-06-26 21:33:39,950 [2165849]   WARN - itors.literals.LiteralsManager - Only Kotlin is supported for LiveLiterals 
+2022-06-26 21:34:09,752 [2195651]   WARN - itors.literals.LiteralsManager - Only Kotlin is supported for LiveLiterals 
+2022-06-26 21:34:09,752 [2195651]   WARN - itors.literals.LiteralsManager - Only Kotlin is supported for LiveLiterals 
+2022-06-26 21:34:09,752 [2195651]   WARN - itors.literals.LiteralsManager - Only Kotlin is supported for LiveLiterals 
+2022-06-26 21:34:09,752 [2195651]   WARN - itors.literals.LiteralsManager - Only Kotlin is supported for LiveLiterals 
+2022-06-26 21:34:09,752 [2195651]   WARN - itors.literals.LiteralsManager - Only Kotlin is supported for LiveLiterals 
+2022-06-26 21:34:25,964 [2211863]   WARN - itors.literals.LiteralsManager - Only Kotlin is supported for LiveLiterals 
+2022-06-26 21:34:25,964 [2211863]   WARN - itors.literals.LiteralsManager - Only Kotlin is supported for LiveLiterals 
+2022-06-26 21:34:25,965 [2211864]   WARN - itors.literals.LiteralsManager - Only Kotlin is supported for LiveLiterals 
+2022-06-26 21:34:25,965 [2211864]   WARN - itors.literals.LiteralsManager - Only Kotlin is supported for LiveLiterals 
+2022-06-26 21:34:25,967 [2211866]   WARN - itors.literals.LiteralsManager - Only Kotlin is supported for LiveLiterals 
+2022-06-26 21:34:32,684 [2218583]   WARN - itors.literals.LiteralsManager - Only Kotlin is supported for LiveLiterals 
+2022-06-26 21:34:32,685 [2218584]   WARN - itors.literals.LiteralsManager - Only Kotlin is supported for LiveLiterals 
+2022-06-26 21:34:32,685 [2218584]   WARN - itors.literals.LiteralsManager - Only Kotlin is supported for LiveLiterals 
+2022-06-26 21:34:32,685 [2218584]   WARN - itors.literals.LiteralsManager - Only Kotlin is supported for LiveLiterals 
+2022-06-26 21:34:32,687 [2218586]   WARN - itors.literals.LiteralsManager - Only Kotlin is supported for LiveLiterals 
