@@ -20,3 +20,9 @@ Easy pipeline to deploy deep learning on android, powered by :
 - [ ] Yolact
 ## Demo
 ![](https://raw.githubusercontent.com/kikirizki/pytorch_to_android-ncnn/master/blazeface_mobilefacenet.gif)
+## Reference 
+- https://github.com/FeiGeChuanShu/ncnn_Android_blazeface
+- https://github.com/nihui/ncnn
+- https://github.com/fdbtrs/PocketNet
+- https://github.com/liguiyuan/mobilefacenet-ncnn
+- https://github.com/nihui/opencv-mobile
