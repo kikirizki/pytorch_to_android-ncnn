@@ -123,7 +123,7 @@ void MyNdkCamera::on_image_render(cv::Mat &rgb) const {
         if (g_blazeface) {
             std::vector<FaceObject> faceobjects;
             g_blazeface->detect(rgb, faceobjects);
-            g_mobilefacenet->get_embeding(rgb, faceobjects);
+            g_mobilefacenet->get_embeding(faceobjects);
             g_blazeface->draw(rgb, faceobjects);
         } else {
             draw_unsupported(rgb);

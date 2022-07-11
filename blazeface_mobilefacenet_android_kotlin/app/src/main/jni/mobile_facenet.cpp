@@ -59,19 +59,16 @@ void normalize(std::vector<float> &feature) {
 }
 
 float calculate_cosine_similarity(std::vector<float> &v1, std::vector<float> &v2) {
-    float similarity;
-    if (v1.size() != v2.size() || !v1.size())
+    if(v1.size() != v2.size()||!v1.size())
         return 0;
-    float ret = 0.0, mod1 = 0.0, mod2 = 0.0, dist = 0.0, diff = 0.0;
-
-    for (std::vector<float>::size_type i = 0; i != v1.size(); ++i) {
+    float ret = 0.0, mod1 = 0.0, mod2 = 0.0;
+    for (std::vector<double>::size_type i = 0; i != v1.size(); ++i)
+    {
         ret += v1[i] * v2[i];
         mod1 += v1[i] * v1[i];
         mod2 += v2[i] * v2[i];
     }
-    similarity = ret / (sqrt(mod1) * sqrt(mod2));
-
-    return similarity;
+    return ret / sqrt(mod1) / sqrt(mod2) ;
 }
 
 std::string MobileFaceNet::get_name(ncnn::Mat &in) {
@@ -87,9 +84,9 @@ std::string MobileFaceNet::get_name(ncnn::Mat &in) {
         person_b_feature.emplace_back(feat_b_ncnn[j]);
         unknown_person.emplace_back(unknown_emd[j]);
     }
-    normalize(person_a_feature);
-    normalize(person_b_feature);
-    normalize(unknown_person);
+//    normalize(person_a_feature);
+//    normalize(person_b_feature);
+//    normalize(unknown_person);
     float sim_a = calculate_cosine_similarity(person_a_feature, unknown_person);
     float sim_b = calculate_cosine_similarity(person_b_feature, unknown_person);
 
@@ -116,13 +113,13 @@ float MobileFaceNet::compare_face(ncnn::Mat &face_a, ncnn::Mat &face_b) {
     return calculate_cosine_similarity(person_a_feature, person_b_feature);
 }
 
-int MobileFaceNet::get_embeding(const cv::Mat &rgb, std::vector<FaceObject> &faceobjects) {
+int MobileFaceNet::get_embeding(std::vector<FaceObject> &faceobjects) {
     for (auto &obj: faceobjects) {
 
-        cv::Mat imCrop = rgb(obj.rect);
-        ncnn::Mat in = ncnn::Mat::from_pixels_resize(imCrop.data,
+
+        ncnn::Mat in = ncnn::Mat::from_pixels_resize(obj.trans_image.data,
                                                      ncnn::Mat::PIXEL_RGB,
-                                                     imCrop.cols, imCrop.rows,
+                                                     obj.trans_image.cols, obj.trans_image.rows,
                                                      112, 112);
 
         obj.name = "Unknown";
@@ -134,11 +131,10 @@ int MobileFaceNet::get_embeding(const cv::Mat &rgb, std::vector<FaceObject> &fac
 
 ncnn::Mat MobileFaceNet::forward(ncnn::Mat &in) {
     ncnn::Extractor ex = pocketnet.create_extractor();
+
+    ex.set_light_mode(true);
     ex.input("data", in);
     ncnn::Mat out;
     ex.extract("fc1", out);
     return out;
-}
-void MobileFaceNet::addFace(ncnn::Mat &in){
-    MobileFaceNet::saved_embedding.emplace_back(in);
 }

@@ -3186,7 +3186,7 @@ int Face::draw(cv::Mat &rgb, const std::vector<FaceObject> &objects) {
         cv::line(rgb, objects[i].pos[2], objects[i].pos[3], cv::Scalar(0, 0, 255), 2, 8, 0);
         cv::line(rgb, objects[i].pos[3], objects[i].pos[0], cv::Scalar(0, 0, 255), 2, 8, 0);
         cv::putText(rgb,objects[i].name, objects[i].pos[3],
-                    cv::FONT_HERSHEY_SIMPLEX, 1.0, cv::Scalar(0, 0, 0));
+                    cv::FONT_HERSHEY_SIMPLEX, 1.0, cv::Scalar(255, 255, 255),2);
 
     }
 

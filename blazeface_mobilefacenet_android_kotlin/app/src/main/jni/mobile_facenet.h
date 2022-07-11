@@ -23,7 +23,7 @@ class MobileFaceNet {
 public:
     int load(AAssetManager *mgr, bool use_gpu = false);
 
-    int get_embeding(const cv::Mat &rgb, std::vector<FaceObject> &faceobjects);
+    int get_embeding(std::vector<FaceObject> &faceobjects);
 
     void add_face(ncnn::Mat &img);
 
@@ -35,7 +35,7 @@ private:
 
     std::string get_name(ncnn::Mat &in);
 
-    void addFace(ncnn::Mat &in);
+
 };
 
 #endif // BLAZEFACE_H
