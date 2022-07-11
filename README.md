@@ -18,3 +18,5 @@ Easy pipeline to deploy deep learning on android, powered by :
 - [x] MobileFaceNet + BlazeFace [Does not seem to work correctly]
 ## Semantic Segmentation
 - [ ] Yolact
+## Demo
+![](https://raw.githubusercontent.com/kikirizki/pytorch_to_android-ncnn/master/blazeface_mobilefacenet.gif)
