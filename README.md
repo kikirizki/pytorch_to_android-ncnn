@@ -9,7 +9,7 @@ Easy pipeline to deploy deep learning on android, powered by :
 ## Image Classification
 - [x] MobilenetV2
 - [ ] ViT
-## Object Detecction
+## Object Detection
 - [ ] YoloX
 ## Face Recogniton
 - [x] MobileFaceNet + PocketNet 
