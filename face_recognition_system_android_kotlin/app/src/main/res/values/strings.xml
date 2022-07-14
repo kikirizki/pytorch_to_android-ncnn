@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Face Recognition kt</string>
+    <string-array name="cpugpu_array">
+        <item>CPU</item>
+        <item>GPU</item>
+    </string-array>
+    <string-array name="detection_model_array">
+        <item>192</item>
+        <item>320</item>
+        <item>640</item>
+    </string-array>
+    <string-array name="recognition_model_array">
+        <item>pocketnet</item>
+        <item>mobilefacenet</item>
+    </string-array>
+</resources>
