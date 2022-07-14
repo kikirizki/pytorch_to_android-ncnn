@@ -15,9 +15,12 @@ Easy pipeline to deploy deep learning on android, powered by :
 - [x] MobileFaceNet + PocketNet 
 - [ ] ElasticFace
 - [ ] ArcFace
-- [x] MobileFaceNet + BlazeFace
+- [x] MobileFaceNet + BlazeFace 
 ## Semantic Segmentation
 - [ ] Yolact
+## Conversion Script from PyTorch to NCNN
+- PocketNet [![Pytorch](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kikirizki/pytorch_to_android-ncnn/blob/master/pytorch_pocketnet_to_ncnn.ipynb)
+- MobileNet [![Pytorch](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kikirizki/pytorch_to_android-ncnn/blob/master/pytorch_mobilenet_to_ncnn.ipynb)
 ## Demo
 ### BlazeFace + MobileFaceNet
 ![](https://raw.githubusercontent.com/kikirizki/pytorch_to_android-ncnn/master/blazeface_mobilefacenet.gif)
