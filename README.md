@@ -1,8 +1,8 @@
 # Deploy Pytorch Model to Android 
 Easy pipeline to deploy deep learning on android, powered by :
 <p>
-<img src="https://raw.githubusercontent.com/kikirizki/pytorch_to_android-ncnn/master/Pytorch_logo.png"  height="64" /> &
-<img src="https://raw.githubusercontent.com/kikirizki/pytorch_to_android-ncnn/master/256-ncnn.png"  height="64" />
+<img src="https://raw.githubusercontent.com/kikirizki/pytorch_to_android-ncnn/master/images/Pytorch_logo.png"  height="64" /> &
+<img src="https://raw.githubusercontent.com/kikirizki/pytorch_to_android-ncnn/master/images/256-ncnn.png"  height="64" />
 </p>
 
 # Road Map
@@ -23,9 +23,9 @@ Easy pipeline to deploy deep learning on android, powered by :
 - MobileNet [![Pytorch](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kikirizki/pytorch_to_android-ncnn/blob/master/pytorch_mobilenet_to_ncnn.ipynb)
 ## Demo
 ### BlazeFace + MobileFaceNet
-![](https://raw.githubusercontent.com/kikirizki/pytorch_to_android-ncnn/master/blazeface_mobilefacenet.gif)
+![](https://raw.githubusercontent.com/kikirizki/pytorch_to_android-ncnn/master/demos/blazeface_mobilefacenet.gif)
 ### BlazeFace + PocketNet 128
-![](https://raw.githubusercontent.com/kikirizki/pytorch_to_android-ncnn/master/blazeface_pocketnet.gif)
+![](https://raw.githubusercontent.com/kikirizki/pytorch_to_android-ncnn/master/demos/blazeface_pocketnet.gif)
 ## Reference 
 - https://github.com/FeiGeChuanShu/ncnn_Android_blazeface
 - https://github.com/nihui/ncnn
