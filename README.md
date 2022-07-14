@@ -1,4 +1,4 @@
-# Deploy Pytorch Model to Android 
+# Deploy Deep Learning Model to Android 
 Easy pipeline to deploy deep learning on android, powered by :
 <p>
 <img src="https://raw.githubusercontent.com/kikirizki/pytorch_to_android-ncnn/master/images/pytorch_ncnn.jpeg"  height="256" /> 
