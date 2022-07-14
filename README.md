@@ -22,7 +22,7 @@ Easy pipeline to deploy deep learning on android, powered by :
 ### BlazeFace + MobileFaceNet
 ![](https://raw.githubusercontent.com/kikirizki/pytorch_to_android-ncnn/master/blazeface_mobilefacenet.gif)
 ### BlazeFace + PocketNet 128
-![](https://raw.githubusercontent.com/kikirizki/pytorch_to_android-ncnn/master/pocketnet_blazeface.gif)
+![](https://raw.githubusercontent.com/kikirizki/pytorch_to_android-ncnn/master/blazeface_pocketnet.gif)
 ## Reference 
 - https://github.com/FeiGeChuanShu/ncnn_Android_blazeface
 - https://github.com/nihui/ncnn
