@@ -15,7 +15,7 @@ Easy pipeline to deploy deep learning on android, powered by :
 - [ ] PocketNet    [WIP]
 - [ ] ElasticFace
 - [ ] ArcFace
-- [x] MobileFaceNet + BlazeFace [Does not seem to work correctly]
+- [x] MobileFaceNet + BlazeFace
 ## Semantic Segmentation
 - [ ] Yolact
 ## Demo
