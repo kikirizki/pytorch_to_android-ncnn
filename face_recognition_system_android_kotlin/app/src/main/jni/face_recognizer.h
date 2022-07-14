@@ -28,11 +28,13 @@ public:
     void add_face(ncnn::Mat &img);
 
     float compare_face(ncnn::Mat &face_a, ncnn::Mat &face_b);
+    void clear_face_cache();
 private:
     ncnn::Net face_embeding_net;
     std::vector<ncnn::Mat> saved_embedding ;
     ncnn::Mat forward(ncnn::Mat &in);
     std::string get_name(ncnn::Mat &in);
+
 };
 
 #endif // BLAZEFACE_H

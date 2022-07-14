@@ -211,6 +211,7 @@ Java_com_deploy_facerecognitionkt_FaceRecognition_loadModel(JNIEnv *env, jobject
                 g_face_recognizer = new FaceRecognizer;
             g_blazeface->load(mgr, detection_model, target_size, use_gpu);
             g_face_recognizer->load(mgr, recognition_model, use_gpu);
+            g_face_recognizer->clear_face_cache();
 
         }
     }

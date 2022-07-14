@@ -21,7 +21,7 @@
 #include "cpu.h"
 
 
-int FaceRecognizer::load(AAssetManager *mgr, const char* modeltype, bool use_gpu) {
+int FaceRecognizer::load(AAssetManager *mgr, const char *modeltype, bool use_gpu) {
     face_embeding_net.clear();
 
     ncnn::set_cpu_powersave(2);
@@ -62,16 +62,15 @@ void normalize(std::vector<float> &feature) {
 }
 
 float calculate_cosine_similarity(std::vector<float> &v1, std::vector<float> &v2) {
-    if(v1.size() != v2.size()||!v1.size())
+    if (v1.size() != v2.size() || !v1.size())
         return 0;
     float ret = 0.0, mod1 = 0.0, mod2 = 0.0;
-    for (std::vector<double>::size_type i = 0; i != v1.size(); ++i)
-    {
+    for (std::vector<double>::size_type i = 0; i != v1.size(); ++i) {
         ret += v1[i] * v2[i];
         mod1 += v1[i] * v1[i];
         mod2 += v2[i] * v2[i];
     }
-    return ret / sqrt(mod1) / sqrt(mod2) ;
+    return ret / sqrt(mod1) / sqrt(mod2);
 }
 
 std::string FaceRecognizer::get_name(ncnn::Mat &in) {
@@ -140,4 +139,8 @@ ncnn::Mat FaceRecognizer::forward(ncnn::Mat &in) {
     ncnn::Mat out;
     ex.extract("fc1", out);
     return out;
+}
+
+void FaceRecognizer::clear_face_cache() {
+    FaceRecognizer::saved_embedding.clear();
 }
