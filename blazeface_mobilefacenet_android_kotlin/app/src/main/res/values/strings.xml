@@ -1,7 +1,0 @@
-<resources>
-    <string name="app_name">Face Recognition kt</string>
-    <string-array name="cpugpu_array">
-        <item>CPU</item>
-        <item>GPU</item>
-    </string-array>
-</resources>
