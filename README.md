@@ -12,7 +12,7 @@ Easy pipeline to deploy deep learning on android, powered by :
 ## Object Detecction
 - [ ] YoloX
 ## Face Recogniton
-- [ ] PocketNet    [WIP]
+- [x] MobileFaceNet + PocketNet 
 - [ ] ElasticFace
 - [ ] ArcFace
 - [x] MobileFaceNet + BlazeFace
